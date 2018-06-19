@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="css/img/icon.jpg" />
+      <title>Ask A Vitamin Specialist</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Muli:300i|Tajawal:300" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans: 125i" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Londrina+Outline|Sacramento" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   </head>
+   <body>
+            <!--Green banner with links to aboutUs, Services/Pricing, My Account-->
+      <div>
+         <div class="w3-bar w3-green banner center">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="pricing.html" class="w3-bar-item w3-button">Services/Pricing</a>
+            <a href="aboutUs.html" class="w3-bar-item w3-button">About Us</a>
+         </div>
+      </div>
+      <!--This is the logo view along with the My Account Setup title for phone, tablet & up.>-->
+      <div class="indexLogoDivAboutUsSmall">
+         <img src="css/img/indexLogo150px.jpg" class="indexLogo" alt="Logo with thick green text book with leaf growing out of top.">
+         <h1 class="myAccountTitleSmall">My Account Setup</h1>
+      </div>
+      <div class="indexLogoDivAboutUsMedium">
+         <img src="css/img/indexLogo225px.jpg" class="indexLogo" alt="Logo with thick green text book with leaf growing out of top.">
+         <h1 class="myAccountTitleMedium">My Account Setup</h1>
+      </div>
+      <!--This is the clipboard photo which will have a form in it. ***This is where I decided to stop-->
+      <div class="clipboardDivSmall animated fadeInRight">
+         <img src="css/img/largeClipboard375px.jpg" alt="Clipboard that has form to fill out my account information.">
+         <form class="centering">
+            <br>
+            <br>
+            <input id="old" type="checkbox">
+            <label class="bubblegum" for "old">Are you over 18 years of age?</label>
+            <br>
+           <label for="textInput"></label>
+           <br>
+         <label class="bubblegum" for "states">Unfortunatley, we are unable to serve every state.
+            <br>
+            <input list="states" size="40" placeholder=" Please pick your state of residence.">
+            <datalist id="states">
+            <option value="Alabama"></option>
+            <option value="Alaska"></option>
+            <option value="Arizona"></option>
+            <option value="California"></option>
+            <option value="Colorado"></option>
+            <option value="Connecticut"></option>
+            <option value="Delaware"></option>
+            <option value="Florida"></option>
+            <option value="Georgia"></option>
+            <option value="Hawaii"></option>
+            <option value="Idaho"></option>
+            <option value="Illinois"></option>
+            <option value="Indiana"></option>
+            <option value="Iowa"></option>
+            <option value="Kansas"></option>
+            <option value="Kentucky"></option>
+            <option value="Louisana"></option>
+            <option value="Maine"></option>
+            <option value="Maryland"></option>
+            <option value="Massachusetts"></option>
+            <option value="Michigan"></option>
+            <option value="Minnesota"></option>
+            <option value="Mississippi"></option>
+            <option value="Missouri"></option>
+            <option value="Montana"></option>
+            <option value="Nebraska"></option>
+            <option value="Nevada"></option>
+            <option value="New Hampshire"></option>
+            <option value="New Jersey"></option>
+            <option value="New Mexico"></option>
+            <option value="New York"></option>
+            <option value="North Carolina"></option>
+            <option value="North Dakota"></option>
+            <option value="Ohio"></option>
+            <option value="Oklahoma"></option>
+            <option value="Oregon"></option>
+            <option value="Pennsylvania"></option>
+            <option value="Rhode Island"></option>
+            <option value="South Carolina"></option>
+            <option value="South Dakota"></option>
+            <option value="Tennessee"></option>
+            <option value="Texas"></option>
+            <option value="Utah"></option>
+            <option value="Vermont"></option>
+            <option value="Vigrinia"></option>
+            <option value="Washington"></option>
+            <option value="Washington D.C."></option>
+            <option value="West Vigrinia"></option>
+            <option value="Wisconsin"></option>
+            <option value="Wyoming"></option>
+            <option value="Outside The U.S."></option>
+</datalist>
+
+<br>
+<br>
+
+<input id="textInput" class="custom" size="40" placeholder="  Welcome!  What is your name?" />
+     <br>
+     <br>
+    <label for="telephone">
+
+        <input id="telephone" type="tel" size="40" placeholder="   & Telephone Number?  xxx-xxx-xxxx  ">
+    </label>
+   <br>
+   <br>
+    <label for="formEmail"></label>
+<input type="email" name="emailC" id="formEmail" size="40"
+  placeholder="  Email? (We don't spam!) name@example.com" required autocomplete="email">
+<br>
+<br>
+    <div class="nativeDateTimePicker">
+    <label for="party">When would you like your phone consult?</label>
+    <input type="datetime-local" id="party" name="bday">
+
+  </div>
+  <br>
+<div class="control">Which service would you like?
+   <br>
+  <label class="radio">
+    <input type="radio" name="answer">
+    General Questions
+  </label>
+  <label class="radio">
+    <input type="radio" name="answer">
+    Consolidation
+  </label>
+    <label class="radio">
+    <input type="radio" name="answer">
+    Formulations
+  </label>
+<div>
+<input type="button" class="button" value="Submit & Go To Payment">
+</div>
+</div>
+
+         </form>
+      </div>
+      <div class="clipboardDivMedium animated fadeInRight">
+         <img src="css/img/largeClipboard375px.jpg" alt="Clipboard that has form to fill out my account information.">
+         <form class="centering">
+            <br>
+            <br>
+            <input id="old" type="checkbox">
+            <label class="bubblegum" for "old">Are you over 18 years of age?</label>
+            <br>
+           <label for="textInput"></label>
+           <br>
+         <label class="bubblegum" for "states">Unfortunatley, we are unable to serve every state.
+            <br>
+            <input list="states" size="40" placeholder=" Please pick your state of residence.">
+            <datalist id="states">
+            <option value="Alabama"></option>
+            <option value="Alaska"></option>
+            <option value="Arizona"></option>
+            <option value="California"></option>
+            <option value="Colorado"></option>
+            <option value="Connecticut"></option>
+            <option value="Delaware"></option>
+            <option value="Florida"></option>
+            <option value="Georgia"></option>
+            <option value="Hawaii"></option>
+            <option value="Idaho"></option>
+            <option value="Illinois"></option>
+            <option value="Indiana"></option>
+            <option value="Iowa"></option>
+            <option value="Kansas"></option>
+            <option value="Kentucky"></option>
+            <option value="Louisana"></option>
+            <option value="Maine"></option>
+            <option value="Maryland"></option>
+            <option value="Massachusetts"></option>
+            <option value="Michigan"></option>
+            <option value="Minnesota"></option>
+            <option value="Mississippi"></option>
+            <option value="Missouri"></option>
+            <option value="Montana"></option>
+            <option value="Nebraska"></option>
+            <option value="Nevada"></option>
+            <option value="New Hampshire"></option>
+            <option value="New Jersey"></option>
+            <option value="New Mexico"></option>
+            <option value="New York"></option>
+            <option value="North Carolina"></option>
+            <option value="North Dakota"></option>
+            <option value="Ohio"></option>
+            <option value="Oklahoma"></option>
+            <option value="Oregon"></option>
+            <option value="Pennsylvania"></option>
+            <option value="Rhode Island"></option>
+            <option value="South Carolina"></option>
+            <option value="South Dakota"></option>
+            <option value="Tennessee"></option>
+            <option value="Texas"></option>
+            <option value="Utah"></option>
+            <option value="Vermont"></option>
+            <option value="Vigrinia"></option>
+            <option value="Washington"></option>
+            <option value="Washington D.C."></option>
+            <option value="West Vigrinia"></option>
+            <option value="Wisconsin"></option>
+            <option value="Wyoming"></option>
+            <option value="Outside The U.S."></option>
+</datalist>
+
+<br>
+<br>
+
+<input id="textInput" class="custom" size="40" placeholder="  Welcome!  What is your name?" />
+     <br>
+     <br>
+    <label for="telephone">
+
+        <input id="telephone" type="tel" size="40" placeholder="   & Telephone Number?  xxx-xxx-xxxx  ">
+    </label>
+   <br>
+   <br>
+    <label for="formEmail"></label>
+<input type="email" name="emailC" id="formEmail" size="40"
+  placeholder="  Email? (We don't spam!) name@example.com" required autocomplete="email">
+<br>
+<br>
+    <div class="nativeDateTimePicker">
+    <label for="party">When would you like your phone consult?</label>
+    <input type="datetime-local" id="party" name="bday">
+
+  </div>
+  <br>
+<div class="control">Which service would you like?
+   <br>
+  <label class="radio">
+    <input type="radio" name="answer">
+    General Questions
+  </label>
+  <label class="radio">
+    <input type="radio" name="answer">
+    Consolidation
+  </label>
+    <label class="radio">
+    <input type="radio" name="answer">
+    Formulations
+  </label>
+<div>
+<input type="button" class="button" value="Submit & Go To Payment">
+</div>
+</div>
+
+         </form>
+
+      <script src="js/app.js"></script>
+   </body>
+</html>
